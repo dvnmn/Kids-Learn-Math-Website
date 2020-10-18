@@ -1,0 +1,307 @@
+/**
+* Webkit Source: gradient-animator.com
+* Author: Ian Forrest
+*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/**
+* Shake keyframe source: w3schools.com
+*/
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.shake {
+    animation: shake .5s;
+}
+
+.correct {
+    color: green;
+    border-color:green;
+}
+/**
+* Stylesheet for KidsLearn Math Website
+*/
+html {
+    font-size: 20px;
+    font-family: 'Proxima Nova', sans-serif;
+
+    animation: fadein 2s;
+}
+
+body {
+    margin: 0px;
+    background: linear-gradient(270deg, #d267c2, #67aff0);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+.grid-container {
+    display: grid;
+    grid-row-gap: 1em;
+}
+
+/**
+* Header Style
+*/
+#header {
+    padding-top: 2em;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#right-header {
+    float: right;
+    padding-right: 10%;
+    font-size: .7em;
+}
+
+#right-header a {
+    text-decoration: none;
+    background-color: transparent;
+    padding: .8em;
+    border: solid;
+    border-width: 3px;
+    border-radius: 4em;
+    transition: .2s;
+}
+
+#right-header a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#right-header a:hover {
+    color: #ffffffde
+}
+
+#right-header a:visited {
+    color: white;
+}
+
+
+/**
+* Description Style
+*/
+#website-description {
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.row {
+    background-color: white;
+    border-top-left-radius:15%;
+    border-top-right-radius:15%;
+
+    padding-bottom: 5em;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 3%;
+    text-align: left;
+}
+
+#problem-types {
+    color: black;
+    font-family: "Proxima Nova", sans-serif;
+    text-align: center;
+}
+
+.button-group label {
+    font-size: 1em;
+}
+
+
+/**
+* Problems box style
+*/
+#current-problems {
+    color: black;
+    background-color:rgba(255, 255, 255, .25);
+    
+    min-height: 20em;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    position: relative;
+}
+
+#current-problems p {
+    font-size: 4em;
+    font-weight: bold;
+
+    text-align: center;
+
+    line-height: 5em;
+}
+
+#answer-box {
+    font-family: "Proxima Nova", sans-serif;
+
+    border: none;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: black;
+   
+    background: transparent;
+
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    width: 1.4em;
+}
+
+#answer-box:focus {
+    outline: none;
+}
+
+#prev-button {
+    font-size: .5em;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+
+    position: absolute;
+    left: 0;
+    top: 4.3em;
+
+    transition-duration: .2s;
+}
+
+#prev-button:hover {
+    background: rgba(0, 0, 0, .10);
+}
+
+#prev-button:focus {
+    outline:none;
+}
+
+#prev-button:active {
+    background: rgba(255, 255, 255, .25);
+}
+
+#next-button {
+    font-size: .5em;
+    border: none;
+    background: rgba(0, 0, 0, .20);
+    color: white;
+
+    position: absolute;
+    right: 0;
+    top: 4.3em;
+
+    transition-duration: .4s;
+}
+
+#next-button:hover {
+    background: rgba(0, 0, 0, .10);
+}
+
+#next-button:focus {
+    outline:none;
+}
+
+#next-button:active {
+    background: rgba(255, 255, 255, .25);
+}
+
+#problem-dots ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-align: center;
+}
+
+#problem-dots li {
+    color: rgba(255, 255, 255, .50);
+    display: inline-block;
+    font-size: 2em;
+}
+
+
+/*
+* css specific for resources page
+*/
+#content-box {
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+#resources {
+    color: white;
+    background-color:rgba(255, 255, 255, .25);
+   
+    min-height: 20em;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+
+    position: relative;
+}
+
+#content-box li {
+    list-style-type: none;
+    padding-right: 5%;
+}
+
+#resources a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+#resources a:hover{
+    font-weight: 900;
+}
+
+#resource-header{
+    padding-top: 2em;
+    padding-left: 10%;
+    
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#resources a:visited{}
