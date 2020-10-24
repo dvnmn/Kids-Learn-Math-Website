@@ -10,5 +10,5 @@ That is where Kids Learn Math Online comes in! Using our simple interface target
 
 Our hope is that our application can be used as a tool by this new generation of online students to fill the educational void that is left by a lack of in-person classes. 
 
-![Google Cloud Usage](https://github.com/dvnmn/Kids-Learn-Math-Website/blob/main/googleCloudUsage.PNG?raw=true)
+![Google Cloud Usage](https://github.com/dvnmn/Kids-Learn-Math-Website/blob/main/HackGT7 Documentation/googleCloudUsage.PNG?raw=true)
 
