@@ -4,7 +4,7 @@
 Uses Google Cloud as website host and the domain was created through domains.com: (kidslearnmath.online) 
 <br>
 <br>
-The website is now available through Github Pages: https://dvnmn.github.io/kids-learn-math-website/**
+**The website is now available through Github Pages: https://dvnmn.github.io/kids-learn-math-website/**
 
 Providing the next generation of leaders and innovators with the tools they need to obtain a quality education is more important in these unprecedented times than ever before. The coronavirus pandemic has disrupted the education of millions of students. As current students who have had our classes moved online, we know that it can be a struggle to feel confident in the course material without in-person instruction. 
 
