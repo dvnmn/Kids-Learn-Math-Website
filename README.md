@@ -1,7 +1,7 @@
 # Kids Learn Math Website
 ## 2020 HackGT7 Submission
 ### Authors: Devin Moon, Derek Noppinger, Andy Boulle, Jake Perret
-~~Uses Google Cloud as website host and the domain was created through domains.com: (kidslearnmath.online) ~~
+~~Uses Google Cloud as website host and the domain was created through domains.com: (kidslearnmath.online)~~
 <br>
 **The website is now available through Github Pages: https://dvnmn.github.io/kids-learn-math-website/**
 
