@@ -264,7 +264,6 @@ body {
     font-size: 1.3em;
     color: white;
     text-align: center;
-    padding-bottom: 20%;
 }
 
 #resources {
@@ -274,6 +273,8 @@ body {
     min-height: 20em;
     margin-left: 27.5%;
     margin-right: 27.5%;
+
+    padding: .25em;
 
     position: relative;
 }
