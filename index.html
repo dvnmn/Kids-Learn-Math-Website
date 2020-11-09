@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Kids Learn Math</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-</head>
+    <head>
+        <title>Kids Learn Math</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
 
-<body onload="main()">
-    <div class="grid-container">
-        <div id="header">
-            Kids Learn Math
-
-            <div id="right-header">
-                <a href="resources.html">Resources</a>
-            </div>
-        </div>
-
-        <div id="website-description">
-            <h1>Math made easy for kids!</h1>
-            <p>Practice math with fun, easy problems and worksheets below.</p>
-        </div>
-
-        <div class="row">
-            <div id="problems-section">
-                <div id="current-problems">
-                    <p id="problems"> 
-                </div>
-                
-                <!-- <div id="problem-dots">
-                    <ul>
-                        <li id="dot0">•</li>
-                        <li id="dot1">•</li>
-                        <li id="dot2">•</li>
-                        <li id="dot3">•</li>
-                        <li id="dot4">•</li>
-                    </ul>
-                </div> -->
-            </div>
-
-            <div id="problem-types">
-                <div class="column">
-                    <h3>Problem Types</h3>
-
-                    <div class = "button-group">
-                        <input type="radio" id="addition-prob" name="problem-type" checked="checked">
-                        <label for="addition-prob">Addition</label><br>    
-                        <input type="radio" id="subtraction-prob" name="problem-type" >
-                        <label for="subtraction-prob">Subtraction</label><br>
-                        <input type="radio" id="multiplication-prob" name="problem-type" >
-                        <label for="multiplication-prob">Multiplication</label><br>
-                        <input type="radio" id="division-prob" name="problem-type" >
-                        <label for="division-prob">Division</label>
-                    </div>
-                </div>
+    <body onload="genProblems()">
+        <!-- Grid container for grid layout -->
+        <div class="grid-container">
             
-                <div class="column">
-                    <h3>Number of Digits Per Term</h3>
+            <!-- Transparent navbar at top of page -->
+            <div id="header">
+                Kids Learn Math
+
+                <!-- Right-aligned button -->
+                <div id="right-header">
+                    <a href="resources.html">Resources</a>
+                </div>
+            </div>
+
+            <!-- Main description, bold and center -->
+            <div id="website-description">
+                <h1>Math made easy for kids!</h1>
+                <p>Practice math with fun, easy problems and worksheets below.</p>
+            </div>
+
+            <!-- Container for the math problems section -->
+            <div class="row">
+                <!-- Container for solely the currnet problem displayed. -->
+                <div id="problems-section">
+                    <div id="current-problems">
+                        <p id="problems"> 
+                    </div>
+                    
+                    <!-- <div id="problem-dots">
+                        <ul>
+                            <li id="dot0">•</li>
+                            <li id="dot1">•</li>
+                            <li id="dot2">•</li>
+                            <li id="dot3">•</li>
+                            <li id="dot4">•</li>
+                        </ul>
+                    </div> -->
+                </div>
+
+                <!-- Container for the problem type selections menu -->
+                <div id="problem-types">
+                    <!-- First column: Buttons for math operation -->
+                    <div class="column">
+                        <h3>Problem Types</h3>
+                        
+                        <div class = "button-group">
+                            <input type="radio" id="addition-prob" name="problem-type" checked="checked">
+                            <label for="addition-prob">Addition</label><br>    
+                            <input type="radio" id="subtraction-prob" name="problem-type" >
+                            <label for="subtraction-prob">Subtraction</label><br>
+                            <input type="radio" id="multiplication-prob" name="problem-type" >
+                            <label for="multiplication-prob">Multiplication</label><br>
+                            <input type="radio" id="division-prob" name="problem-type" >
+                            <label for="division-prob">Division</label>
+                        </div>
+                    </div>
+                
+                    <!-- Second column: Buttons for number of terms in each problem -->
+                    <div class="column">
+                        <h3>Number of Digits Per Term</h3>
+
+                        <div class = "button-group">
+                            <input type="radio" id="1dig" name="num-digits" checked="checked"><label for="1dig">1</label><br>
+                            <input type="radio" id="2dig" name="num-digits"><label for="2dig">2</label><br>
+                            <input type="radio" id="3dig" name="num-digits"><label for="3dig">3</label>
+                        </div>
+                    </div>
+
+                    <!-- Third column: Buttons for number of digits in each term -->
+                    <div class="column">
+                    <h3>Number of Terms In Problem</h3>
 
                     <div class = "button-group">
-                        <input type="radio" id="1dig" name="num-digits" checked="checked"><label for="1dig">1</label><br>
-                        <input type="radio" id="2dig" name="num-digits"><label for="2dig">2</label><br>
-                        <input type="radio" id="3dig" name="num-digits"><label for="3dig">3</label>
+                        <input type="radio" id="2num" name="num-values" checked="checked"><label for="2num">2</label><br>
+                        <input type="radio" id="3num" name="num-values"><label for="3num">3</label><br>
+                        <input type="radio" id="4num" name="num-values"><label for="4num">4</label>
                     </div>
                 </div>
 
-                <div class="column">
-                <h3>Number of Terms In Problem</h3>
-
-                <div class = "button-group">
-                    <input type="radio" id="2num" name="num-values" checked="checked"><label for="2num">2</label><br>
-                    <input type="radio" id="3num" name="num-values"><label for="3num">3</label><br>
-                    <input type="radio" id="4num" name="num-values"><label for="4num">4</label>
-                </div>
             </div>
-        </div>
-    </div>    
-</div>
 
-</body>
+        </div>
+    </body>
 </html>

@@ -48,6 +48,7 @@
     color: green;
     border-color:green;
 }
+
 /**
 * Stylesheet for KidsLearn Math Website
 */
@@ -302,5 +303,3 @@ body {
     font-size: 1em;
     font-weight: bold;
 }
-
-#resources a:visited{}
